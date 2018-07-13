@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>Registration</title>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+       <link rel="stylesheet" href="styles.css">
+       <style type="text/css">
+              body{
+                     padding-bottom: 20px;
+                     font-family: "Bookman Old Style";
+                     background-image: url("back1 - Copy.png");
+              }
+       </style>
+</head>
+<body>
+       <div class="nav">
+              <a href="pg1.html" style="color:white;">Back to Home Page</a>
+       </div>
+       <center><br>
+       <h1 style="text-shadow: 1px 1px white;"><u><i>Registration form</i></u></h1><br>
+       <form method="get" action="" style="font-weight: bold;">
+              <label >Registration Number:</label><br>
+              <input type="text" name="reg_no" placeholder="e.g. 16BIT0987"><br><br>
+              <label >Name:</label><br>
+              <input  type="text" name="name" placeholder="Your name"><br><br>
+              <label >Password:</label><br>
+              <input  type="password" name="password" placeholder="Password"><br><br>
+              <label >Gender:</label><br>
+              <input  type="radio" name="gender" value="Female">Female
+              <input  type="radio" name="gender" value="Male">Male<br><br>
+              <label for="hostelblock">Hostel Block:</label><br>
+              <select id="hostelblock" name="hostel_block">
+              <option value="select" hidden>Select an option...</option>
+              <option value="E block">E block-MH</option>
+              <option value="F block">F block-MH</option>
+              <option value="C block">C block-MH</option>
+              <option value="E block">E block-LH</option>
+              <option value="F block">F block-LH</option>
+              <option value="C block">C block-LH</option>
+              </select>
+              <br><br>
+              <label >Mobile number:</label><br>
+              <input type="text" name="mob_no" placeholder="e.g.: 8511468023"><br><br>
+              <label >Email:</label><br>
+              <input class="text-white" type="email" name="email"  placeholder="example@example.com"><br><br>
+              <label for="event">Event:</label><br>
+              <select id="event" name="event">
+              <option value="select" hidden>Select an option...</option>
+              <option value="aero">Aero Modelling</option>
+              <option value="cloud">Cloud Computing</option>
+              <option value="matlab">MatLab</option>
+              <option value="pillow">Pillow Fight</option>
+              <option value="laser">Laser Tag</option>
+              </select>
+              <br><br>
+              <input type="submit" value="Sign Up">
+    </form>
+</center>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Informal events</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript">
+    function reg(){
+      window.open("register.html","_self");
+    }
+  </script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark"></nav>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <h2>graVITas18!</h2>
+    <h1>Informal events</h1>
+    <p> <b>FEW</b>(<b> F</b>arming - <b>E</b>nergy and Environment - <b>W</b>ater Conservation)</p>
+  </div>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark"></nav>
+  <div class="pad card-deck">
+    <div class="card">
+      <div class="card-body text-center">
+        <p class="card-text"><b>Laser tag<br>
+  CSI<br></b></p><hr>
+        <img class="card-img-bottom cardimginf" src="lasertag.jpg"><br><br>
+<!-- Trigger/Open The Modal -->
+        <button id="myBtn">View More</button>
+        <button onclick="reg()">Register</button>
+<!-- The Modal -->
+        <div id="myModal" class="modal">
+  <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Laser tag by CSI is a tag game played with guns which fire infrared beams.These guns have to be enforced by law as 3 kilos of stainless steel to make the melee attacks more efficient. Infrared-sensitive targets are commonly worn by each player and are sometimes integrated within the arena in which the game is played. Participation fee Rs 100</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body text-center">
+        <p class="card-text"><b>Pillow fight<br>Creativity Club<br></b></p><hr>
+        <img class="card-img-bottom cardimginf" src="pillow.jpg"><br><br>
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn1">View More</button>
+        <button onclick="reg()">Register</button>
+<!-- The Modal -->
+        <div id="myModal1" class="modal">
+  <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Pillow fight is a fun game held by Creativity Club where two particpants beat each other with a pillow while sitting on a pipe. the one who loses the balance first lses the game and the other contenstant wins.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+var modal1 = document.getElementById('myModal1');
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+var btn1 = document.getElementById("myBtn1");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+var span1 = document.getElementsByClassName("close")[1];
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+btn1.onclick = function() {
+    modal1.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span1.onclick = function() {
+    modal1.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal1) {
+        modal1.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Gravitas2018</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript">
+    function informal(){
+      window.open("informal.html","_self");
+    }
+    function workshop(){
+      window.open("workshop.html","_self");
+    }
+    function about(){
+      window.open("about.html","_self");
+    }
+    function contact(){
+      window.open("contact.html","_self");
+    }
+  </script>
+</head>
+<body>
+  <div id="demo" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="vit1.png" alt=" VIT University">
+      <div class="centered">
+        <h3>VIT University welcomes you to</h3>
+        <h1>graVITas18!</h1>
+        <h3>Show and Enrich your talent</h3>
+        <p>With our theme of <b>FEW</b>(<b> F</b>arming - <b>E</b>nergy and Environment - <b>W</b>ater Conservation)</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="vit2.jpg" alt="VIT University">
+      <div class="centered">
+        <h3>VIT University welcomes you to</h3>
+        <h1>graVITas18!</h1>
+        <h3>Show and Enrich your talent</h3>
+        <p>With our theme of <b>FEW</b>(<b> F</b>arming - <b>E</b>nergy and Environment - <b>W</b>ater Conservation)</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="vit3.jpg" alt="VIT University">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+  <br>
+  <div class="pad card-deck">
+    <div class="card"  onclick="about()">
+      <div class="card-body text-center">
+        <p class="card-text">About</p><hr>
+        <img class="card-img-bottom cardimg" src="about.png">
+      </div>
+    </div>
+    <div class="card" onclick="workshop()">
+      <div class="card-body text-center">
+        <p class="card-text">Workshops</p><hr>
+        <img class="card-img-bottom cardimg" src="workshop.jpg">
+      </div>
+    </div>
+    <div class="card" onclick="informal()">
+      <div class="card-body text-center">
+        <p class="card-text">Informal</p><hr>
+        <img class="card-img-bottom cardimg" src="informal.jpg">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body text-center"  onclick="contact()">
+        <p class="card-text">Contact us</p><hr>
+        <img class="card-img-bottom cardimg" src="contact.jpg">
+      </div>
+    </div>  
+  </div>
+</div>
+<br>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark"></nav>
+<div class="jumbotron text-center" style="margin-bottom:0;background-image: none;color: black;">
+  <p>Footer</p>
+</div>
+</body>
+</html>
